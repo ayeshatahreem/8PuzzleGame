@@ -18,8 +18,7 @@
         android:layout_gravity="center"
         android:background="#0000A0"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="300dp"
@@ -30,7 +29,31 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/button_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_new"
+        android:textColor="#0000A0"
+        android:onClick="newGame" />
+
+     <Button
+        android:id="@+id/button_moves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_moves"
+        android:textColor="#0000A0"
+        android:onClick="newGame" />
+</LinearLayout>
 </RelativeLayout>
-
-
-

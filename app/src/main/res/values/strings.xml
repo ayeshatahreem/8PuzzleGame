@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">8-Puzzle</string>
-    <string name="gameStart">Game Status: Start the game to win!</string>
-    <string name="gameInProcess">Game Status: Continue to win the game!-.-</string>
-    <string name="gameStats">Game Status: You have won the game!^^^^</string>
+    <string name="app_name"><b>8-Puzzle</b></string>
+    <string name="button_moves">Number of moves</string>
+    <string name="button_new"><b>Start new game</b></string>
+    <string name="gameStart"><b>Game Status:</b> Start the game to win!</string>
+    <string name="gameInProcess"><b>Game Status:</b> Continue to win the game!</string>
+    <string name="gameStats"><b>Game Status:</b> You have won the game!</string>
 </resources>

@@ -28,6 +28,17 @@ public class MainActivity extends AppCompatActivity {
         };
     }
 
+    private void clear(){
+        ViewGroup view = (ViewGroup) findViewById(R.id.game);
+        view.removeAllViews();
+    }
+
+    public void newGame(View view){
+        clear();
+        setContentView(R.layout.activity_main);
+        drawBoard();
+    }
+
     public void setMessage(String message){
         TextView v = (TextView) findViewById(R.id.textView);
         v.setText(Html.fromHtml(message));
@@ -37,5 +48,7 @@ public class MainActivity extends AppCompatActivity {
         ViewGroup v = (ViewGroup) findViewById(R.id.game);
         View puzzleView = new PuzzleView(this,null,listener);
         v.addView(puzzleView);
+        TextView text=(TextView) findViewById(R.id.textView);
+        text.setText(R.string.gameStart);
     }
 }

@@ -29,7 +29,7 @@ public class PuzzleView extends View {
         @Override
         protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
             super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-            int size = 0;
+            int size ;
             int width = getMeasuredWidth();
             int height = getMeasuredHeight();
             if (width > height) {
@@ -47,25 +47,23 @@ public class PuzzleView extends View {
             board.draw(canvas);
 
             if (done){
-                listener.showMessage(getContext().getResources().getString(R.string.gameStats));
+               listener.showMessage(getContext().getResources().getString(R.string.gameStats));
+               // TextView text=(TextView) findViewById(R.id.textView);
+                //text.setText(R.string.gameStats);
             }
-            else
-                listener.showMessage(getContext().getResources().getString(R.string.gameStart));
         }
 
     private void playerTurn(float x, float y) {
         if(done ){
            TextView text=(TextView) findViewById(R.id.textView);
             text.setText(R.string.gameStats);
-            /*String text = "You won the game! :D";
-            AlertDialog.Builder obj = new AlertDialog.Builder(this);
-            obj.setMessage(text);
-            AlertDialog p = obj.create();
-            p.show();*/
+
              }
         else
         {
-            listener.showMessage(getContext().getResources().getString(R.string.gameInProcess));
+          listener.showMessage(getContext().getResources().getString(R.string.gameInProcess));
+          // TextView text=(TextView) findViewById(R.id.textView);
+           // text.setText(R.string.gameInProcess);
             done = board.change(x,y);
             invalidate();
         }
