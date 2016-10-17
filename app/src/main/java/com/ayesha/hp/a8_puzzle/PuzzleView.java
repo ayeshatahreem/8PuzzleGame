@@ -59,8 +59,18 @@ public class PuzzleView extends View {
              }
         else
         {
+          //  int totalMoves=0;
           listener.showMessage(getContext().getResources().getString(R.string.gameInProcess));
             done = board.change(x,y);
+          /*  if(done)
+            {
+                TextView text=(TextView) findViewById(R.id.textView);
+                text.setText(R.string.numOfMoves);
+            }
+            else
+            {
+
+            } */
             invalidate();
         }
     }
