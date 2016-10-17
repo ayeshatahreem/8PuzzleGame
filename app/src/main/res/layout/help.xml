@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/abc_text_size_headline_material"
+    android:text="Guide : Arrange the grid in following pattern by moving blocks adjacent to blank in order to win."
+    android:theme="@style/Animation.AppCompat.Dialog"
+    android:background="#B05F6FB6"
+    android:textColor="#ffffff" />
+
+<ImageView
+    android:contentDescription="Final goal to achieve!"
+    android:layout_width="424dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/TitleImage"
+    android:background="@mipmap/ic_launcher"
+    android:layout_marginTop="24px"
+    android:layout_gravity="center_horizontal"
+    android:layout_weight="0.80"
+    android:clickable="false"
+    android:contextClickable="false"
+    android:cropToPadding="false"
+    android:focusable="true">
+</ImageView>
+
+<Button
+   android:text="Go Back"
+   android:id="@+id/back_button"
+   android:onClick="goBack"
+   android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+   android:layout_alignParentBottom="true"
+   android:layout_centerHorizontal="true"
+    android:layout_weight="0.11"
+    android:textColor="#ffffff"
+    android:background="#b05f6fb6"
+    android:theme="@style/Animation.AppCompat.Dialog"
+    android:textSize="@dimen/abc_text_size_headline_material" />
+</LinearLayout>
+
+
+

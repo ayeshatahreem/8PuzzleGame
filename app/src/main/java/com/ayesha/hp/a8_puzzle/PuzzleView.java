@@ -48,8 +48,6 @@ public class PuzzleView extends View {
 
             if (done){
                listener.showMessage(getContext().getResources().getString(R.string.gameStats));
-               // TextView text=(TextView) findViewById(R.id.textView);
-                //text.setText(R.string.gameStats);
             }
         }
 
@@ -62,8 +60,6 @@ public class PuzzleView extends View {
         else
         {
           listener.showMessage(getContext().getResources().getString(R.string.gameInProcess));
-          // TextView text=(TextView) findViewById(R.id.textView);
-           // text.setText(R.string.gameInProcess);
             done = board.change(x,y);
             invalidate();
         }

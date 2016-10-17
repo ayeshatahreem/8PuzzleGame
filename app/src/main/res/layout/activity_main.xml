@@ -43,17 +43,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/button_new"
+        android:text="@string/newGame"
         android:textColor="#0000A0"
         android:onClick="newGame" />
 
+    <Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/exitGame"
+            android:textColor="#0000A0"
+            android:onClick="exitGame" />
+
      <Button
-        android:id="@+id/button_moves"
+        android:id="@+id/button_help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="@string/button_moves"
+        android:text="@string/help"
         android:textColor="#0000A0"
-        android:onClick="newGame" />
+        android:onClick="help" />
+
 </LinearLayout>
 </RelativeLayout>
